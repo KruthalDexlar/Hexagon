@@ -1,0 +1,120 @@
+/* Hexagon
+Website test for Hexagon board game cafe
+*/
+<!DOCTYPE html>
+<style>
+
+p {
+  padding-top: 16;
+  padding-left: 17;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  color:#3d5c5c;
+  font-weight: bold;
+  font-size: 17;
+  
+  }
+
+.header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%
+  
+}
+
+.hexagon {
+  position: relative;
+  width: 125px; 
+  height: 72.17px;
+  background-color: #64C7CC;
+  margin: 36.08px 0;
+  transition: 1s; transform: 1s 0.5s ease-in;
+  color:#3d5c5c;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30;
+
+  
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 62.5px solid transparent;
+  border-right: 62.5px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 36.08px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 36.08px solid #64C7CC;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hexagon:hover {
+  opacity: 0.5;
+  transform: rotate(360deg);
+  
+}
+
+
+  
+</style>
+
+
+<title>Hexagon</title>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <div class="header">
+  <img src="https://scontent.flhr2-1.fna.fbcdn.net/v/t31.0-8/26233300_160622481239291_1199236725206684975_o.jpg?oh=7eaa6690bf2aacfe259b557d77ebadd4&oe=5AEAE99C"
+  width="851" height="315">
+  </div>
+</head>
+
+<body>
+
+  <div id="nav">
+      <div>
+        <div class="hexagon"><p>Rules</p></div>
+      </div>
+      <div>
+        <div class="hexagon"><p>About</p></div>
+      </div>
+      <div>
+        <div class="hexagon"><p>Games</p></div>
+      </div>
+      
+  </div>
+  </br>
+  </br>
+  </br>
+  
+  <div class="home">
+    <h2>
+      Welcome to Taunton's first board game cafe!
+    </h2>
+    <p>Situated in the heart of Taunton, we will be serving quality food and drinks Tuesday - Sunday 
+    and offering over 100 different games to enjoy! </p>
+    
+  </div>
+  
+  <div id="homeimage"><img src="https://media.gettyimages.com/photos/happy-friends-playing-cross-and-section-game-in-a-cafe-picture-id500174914">
+    
+  </div>
+  
+  
+</body>
